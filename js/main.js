@@ -15,6 +15,16 @@ const mobileSlider = () => {
       },
     })
   };
+
+  if (window.innerWidth >= 768) {
+    if (swiper.classList.contains('swiper-initialized')) {
+      mySwiper.destroy();
+    }
+  };
 };
 
 mobileSlider();
+
+window.addEventListener('resize', () => {
+  mobileSlider();
+})
