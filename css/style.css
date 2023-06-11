@@ -34,7 +34,6 @@
   max-width: 320px;
   background-color: #F2F2F2;
   margin: 0 auto;
-  padding-bottom: 38px;
 }
 
 .repair-brands__title {
@@ -50,23 +49,20 @@
 }
 
 .brands-list {
-  list-style: none;
   display: flex;
   flex-wrap: nowrap;
-  column-gap: 16px;
-  overflow: hidden;
+  list-style: none;
   padding: 16px;
 }
 
 .brands-link {
-  display: block;
   display: flex;
   align-items: center;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
   width: 240px;
   height: 72px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-color: #FFFFFF;
   background-image: url(../img/circle-arrow-left.svg);
   background-repeat: no-repeat;
   background-position: 184px center;
@@ -77,9 +73,35 @@
   display: none;
 }
 
+.swiper {
+  padding-bottom: 28px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+  background: #B5B6BC;
+}
+
+
+
 
 /* !-----------------------------768px------------------------------------------------ */
 @media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper {
+    margin: 0;
+    padding: 0;
+
+  }
+
   .repair-brands {
     max-width: 768px;
     background-color: #F2F2F2;
@@ -106,7 +128,7 @@
     column-gap: 24px;
     row-gap: 16px;
     padding: 24px;
-    max-height: 200px;
+    max-height: 150px;
     overflow: hidden;
   }
 
