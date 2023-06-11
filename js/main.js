@@ -1,5 +1,8 @@
 const swiper = document.querySelector('.swiper');
-const showBtn = document.querySelector('.repair-brands__show-btn"');
+const brandsList = document.querySelector('.brands-list');
+const showBtn = document.querySelector('.repair-brands__show-btn');
+const doubleArrow = document.querySelector('.double-arrow');
+const showMore = document.querySelector('.show-more');
 
 let mySwiper;
 
@@ -19,7 +22,7 @@ const mobileSlider = () => {
 
   if (window.innerWidth >= 768) {
     if (swiper.classList.contains('swiper-initialized')) {
-      mySwiper.destroy(deleteInstance = true, cleanStyles = true);
+      mySwiper.destroy();
     }
   };
 };
@@ -30,3 +33,14 @@ window.addEventListener('resize', () => {
   mobileSlider();
 });
 
+showBtn.addEventListener('click', () => {
+  if (brandsList.style.maxHeight === '100%') {
+    brandsList.style.maxHeight = '150px';
+    doubleArrow.style.transform = '';
+    showMore.textContent = 'Показать все';
+  } else {
+    brandsList.style.maxHeight = '100%';
+    doubleArrow.style.transform = 'rotate(180deg)';
+    showMore.textContent = 'Скрыть';
+  }
+});
