@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,78 +7,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>repair block</title>
 
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/swiper@9.3.2_swiper-bundle.css" />
+  <script type="module" src="./js/swiper@9.3.2_swiper-bundle.js"></script>
+
   <link rel="stylesheet" href="./css/style.css">
 
-  <script defer type="module" src="./js/swiper-bundle.min.js"></script>
-  <script defer type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/sliderInit.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
   <section class="repair-brands">
     <h2 class="repair-brands__title">Ремонт техники различных брендов</h2>
 
-    <div class="swiper">
-      <ul class="brands-list swiper-wrapper">
-        <li class="brands-item">
+    <div class="container slider-container">
+      <div class="brands-list swiper-wrapper">
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/lenovo.svg" alt="Логотип Lenovo">
           </a>
-        </li>
+        </div>
 
-        <li class="brands-item">
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/samsung.svg" alt="Логотип Samdung">
           </a>
-        </li>
+        </div>
 
-        <li class="brands-item">
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/apple.svg" alt="Логотип Apple">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/vievSonic.svg" alt="Логотип Vievsonic">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/bosch.svg" alt="Логотип Bosch">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/hp.svg" alt="Логотип HP">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/acer.svg" alt="Логотип Acer">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/sony.svg" alt="Логотип Sony">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/lenovo.svg" alt="Логотип Lenovo">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/samsung.svg" alt="Логотип Samdung">
           </a>
-        </li>
-        <li class="brands-item">
+        </div>
+
+        <div class="brands-item swiper-slide">
           <a href="#" class="brands-link">
             <img src="./img/apple.svg" alt="Логотип Apple">
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <div class="swiper-pagination"></div>
+
     </div>
 
     <button class="repair-brands__show-btn">

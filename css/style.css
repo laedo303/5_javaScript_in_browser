@@ -29,6 +29,11 @@
   padding: 0;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
 .repair-brands {
   max-width: 320px;
@@ -48,11 +53,33 @@
   background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
+.container {
+  overflow: hidden;
+  position: relative;
+  height: 125px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .brands-list {
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
   display: flex;
   flex-wrap: nowrap;
-  list-style: none;
+  gap: 16px;
   padding: 16px;
+}
+
+.brands-item {
+  width: 240px;
+  height: 72px;
 }
 
 .brands-link {
@@ -73,33 +100,20 @@
   display: none;
 }
 
-.swiper {
-  padding-bottom: 28px;
-}
-
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: #DDDDDD;
+  background: #757575;
 }
 
 .swiper-pagination-bullet-active {
-  background: #B5B6BC;
+  background: #5e5e61;
 }
-
-
-
 
 /* !-----------------------------768px------------------------------------------------ */
 @media (min-width: 768px) {
   .swiper-pagination {
     display: none;
-  }
-
-  .swiper {
-    margin: 0;
-    padding: 0;
-
   }
 
   .repair-brands {
@@ -121,19 +135,30 @@
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
   }
 
+  .container {
+    overflow: visible;
+    height: 100%;
+  }
+
   .brands-list {
+    transform: translate3d(0px, 0px, 0px);
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     column-gap: 24px;
     row-gap: 16px;
     padding: 24px;
-    max-height: 150px;
-    overflow: hidden;
+    max-height: 200px;
+  }
+
+  .brands-item {
+    flex-shrink: 1;
+    width: 224px;
+    height: 72px;
   }
 
   .brands-link {
-    display: block;
     display: flex;
     align-items: center;
     background: #FFFFFF;
@@ -179,7 +204,6 @@
     letter-spacing: -0.2px;
     color: #1B1C21;
   }
-
 }
 
 /* ! --------------------------1120px--------------------------------- */
@@ -193,14 +217,18 @@
   }
 
   .brands-list {
+    transform: translate3d(0px, 0px, 0px);
     column-gap: 32px;
     padding: 24px 32px;
+  }
 
-
+  .brands-item {
+    flex-shrink: 1;
+    width: 240px;
+    height: 72px;
   }
 
   .brands-link {
-    display: block;
     display: flex;
     align-items: center;
     background: #FFFFFF;
