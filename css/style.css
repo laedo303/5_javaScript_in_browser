@@ -141,7 +141,7 @@ body {
   }
 
   .brands-list {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0) !important;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +217,7 @@ body {
   }
 
   .brands-list {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0) !important;
     column-gap: 32px;
     padding: 24px 32px;
   }
