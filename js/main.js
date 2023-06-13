@@ -5,12 +5,12 @@ const showMore = document.querySelector('.show-more');
 
 
 showBtn.addEventListener('click', () => {
-  if (brandsList.style.maxHeight === '100%') {
-    brandsList.style.maxHeight = '200px';
+  if (brandsList.style.height === '100%') {
+    brandsList.style.height = '200px';
     doubleArrow.style.transform = '';
     showMore.textContent = 'Показать все';
   } else {
-    brandsList.style.maxHeight = '100%';
+    brandsList.style.height = '100%';
     doubleArrow.style.transform = 'rotate(180deg)';
     showMore.textContent = 'Скрыть';
   }
